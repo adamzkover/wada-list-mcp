@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: wada-list-mcp
+  ai:
+    mcp:
+      server:
+        enabled: true
+        stdio: false
+        name: wada-list-mcp
+        version: 1.0.0
+        type: SYNC
+        capabilities:
+          resource: false
+          tool: true
+          prompt: false
+          completion: false
+        sse-endpoint: /sse # default
+        sse-message-endpoint: /message # default: /mcp/message
